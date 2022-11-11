@@ -1,0 +1,13 @@
+{
+  "include": [
+    "src" //확인할 ts파일 위치
+  ],
+  "compilerOptions": {
+    "outDir": "build", //컴파일된 js의 저장 위치
+    "target": "ES6", //컴파일되기 원하는 js version(ES6가 일반적인 선택)
+    "lib": ["ES6"], //어떤 환경에서 js가 실행될지 선택(DOM이 있으면 document, localstorage등 브라우저에만 있는 객체를 ts가 알게된다)
+    "strict": true, //ts보호모드 켬
+    "esModuleInterop": true, //CommonJS 모듈을 ES6 모듈 코드베이스로 가져오려고 할때 발생하는 문제를 해결해줌
+    "module": "CommonJS"
+  }
+}
